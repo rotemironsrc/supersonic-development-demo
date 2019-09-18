@@ -11,6 +11,8 @@ RUN apk update \
         build-base \
         gcc \
         wget \
+        openssh-client \
+        ca-certificates \
         git \
     #
     # add bash for npm script compatibility
