@@ -11,8 +11,11 @@
         "terminal.integrated.shell.linux": "/bin/bash"
     },
 
-    // Specifies a command that should be run after the container has been created.
-    "postCreateCommand": "npm install",
+    // Mount your .ssh folder to /root/.ssh-localhost so we can copy its contents
+    "runArgs": [ "-v", "${env:HOME}${env:USERPROFILE}/.ssh:/root/.ssh-localhost:ro" ],
+
+    // Copy the contents to the correct location and set permissions
+    "postCreateCommand": "mkdir -p ~/.ssh && cp -r ~/.ssh-localhost/* ~/.ssh && chmod 700 ~/.ssh && chmod 600 ~/.ssh/*",
 
     "extensions": [
         "dbaeumer.vscode-eslint"

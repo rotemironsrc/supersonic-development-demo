@@ -7,16 +7,15 @@ RUN apk update \
     && apk upgrade \
     #
     # add git and needed tools
-    && apk add --virtual build-dependencies \
-        build-base \
-        gcc \
-        wget \
+    && apk add --no-cache \
+        # build-dependencies \
+        # build-base \
+        # gcc \
+        # wget \
         openssh-client \
         ca-certificates \
         git \
-    #
-    # add bash for npm script compatibility
-    && apk add bash \
+        bash \
     #
     # Install eslint globally
     && npm install -g eslint \
