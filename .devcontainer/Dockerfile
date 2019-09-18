@@ -8,6 +8,7 @@ RUN apk update \
     #
     # add git and needed tools
     && apk add --no-cache \
+    # uncomment if gcc needed for native code
         # build-dependencies \
         # build-base \
         # gcc \
