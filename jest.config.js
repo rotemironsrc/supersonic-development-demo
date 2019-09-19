@@ -8,5 +8,4 @@ module.exports = {
         "src/**/*.ts",
         "!src/server.ts"
     ]
-
 };
