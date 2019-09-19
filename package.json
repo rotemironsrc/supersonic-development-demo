@@ -1,0 +1,20 @@
+{
+    "name": "ts-on-node-template",
+    "version": "1.0.0",
+    "description": "vscode remote development environment for node.js with typescript in docker container",
+    "author": "Ab Reitsma",
+    "main": "dist/server.js",
+    "private": true,
+    "scripts": {
+        "start": "node dist/server.js",
+        "build": "tsc src/server.ts"
+    },
+    "dependencies": {
+        "express": "^4.16.1"
+    },
+    "devDependencies": {
+        "@types/express": "^4.17.1",
+        "@types/node": "^12.7.5",
+        "typescript": "^3.6.3"
+    }
+}

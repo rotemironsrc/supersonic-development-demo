@@ -13,7 +13,7 @@ const PORT = 8080;
 const HOST = '0.0.0.0';
 
 // App
-const app = express();
+const app =express();
 app.get('/', (req: Request, res: Response) => {
 	res.send('Hello remote world!\n');
 });
