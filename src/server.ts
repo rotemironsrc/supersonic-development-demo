@@ -8,9 +8,6 @@
 import { Request, Response } from 'express';
 import express from "express";
 
-// dummy for testing
-import { testTrue } from "./dummy";
-
 // Constants
 const PORT = 8080;
 const HOST = '0.0.0.0';
@@ -24,4 +21,3 @@ app.get('/', (req: Request, res: Response) => {
 app.listen(PORT, HOST);
 console.log(`Running on http://${HOST}:${PORT}`);
 console.log("And another line, for testing!");
-console.log(`the dummy value is ${testTrue}`);
