@@ -1,24 +1,11 @@
 {
-    "name" : "node.js typescript docker test",
-    "dockerFile": "Dockerfile",
-
-    // Specifies a list of ports that should be published.
-    "appPort": [8080],
-
-	// Use 'settings' to set *default* container specific settings.json values on container create. 
-	// You can edit these settings after create using File > Preferences > Settings > Remote.
-    "settings": {
-        "terminal.integrated.shell.linux": "/bin/bash"
-    },
-
-    // Mount your .ssh folder to /root/.ssh-localhost so we can copy its contents
-    "runArgs": [ "-v", "${env:HOME}${env:USERPROFILE}/.ssh:/root/.ssh-localhost:ro" ],
-
-    // Copy the contents to the correct location and set permissions
-    "postCreateCommand": "mkdir -p ~/.ssh && cp -r ~/.ssh-localhost/* ~/.ssh && chmod 700 ~/.ssh && chmod 600 ~/.ssh/* && npm install -g typescript && npm install",
-
-    "extensions": [
-        "dbaeumer.vscode-eslint",
-        "Orta.vscode-jest"
-    ] 
+  "name": "node.js typescript docker test",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "web",
+  "workspaceFolder": "/app",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash",
+    "workbench.colorTheme": "Tomorrow Night Blue"
+  },
+  "extensions": ["esbenp.prettier-vscode"]
 }

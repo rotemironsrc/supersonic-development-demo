@@ -1,0 +1,38 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "src/**/*.js": true,
+    "src/**/*.js.map": true
+  },
+  "search.exclude": {
+    "**/node_modules": true
+  },
+  "prettier.singleQuote": true,
+  "prettier.proseWrap": "always",
+  "prettier.quoteProps": "consistent",
+  "prettier.printWidth": 120,
+  "prettier.tabWidth": 2,
+  "prettier.arrowParens": "avoid",
+  "prettier.bracketSpacing": true,
+  "prettier.endOfLine": "auto",
+  "prettier.htmlWhitespaceSensitivity": "css",
+  "prettier.insertPragma": false,
+  "prettier.jsxBracketSameLine": false,
+  "prettier.jsxSingleQuote": false,
+  "prettier.requirePragma": false,
+  "prettier.semi": true,
+  "prettier.trailingComma": "none",
+  "prettier.useTabs": false,
+  "serverlessIDE.cfnLint.ignoreRules": [],
+  "json.maxItemsComputed": 10000,
+  "debug.javascript.usePreview": false
+}

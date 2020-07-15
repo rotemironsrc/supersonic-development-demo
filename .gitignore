@@ -4,3 +4,4 @@ node_modules/
 ## Generated code
 dist/
 coverage/
+.devcontainer/data

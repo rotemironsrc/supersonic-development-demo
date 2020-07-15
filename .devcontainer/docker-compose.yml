@@ -1,0 +1,48 @@
+version: '3.0'
+
+services:
+  redis:
+    image: redis:4
+    restart: always
+    container_name: redis
+    volumes:
+      - ./data/redis:/data
+    networks:
+      - supersonic
+    ports:
+      - 6379:6379
+
+  postgres:
+    container_name: postgres
+    image: postgres
+    environment:
+      POSTGRES_DB: supersonic
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: adminPassword
+      PGDATA: /data/postgres
+    volumes:
+      - ./data/postgres:/data/postgres
+    ports:
+      - 5432:5432
+    networks:
+      - supersonic
+    restart: unless-stopped
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    command: /bin/sh -c "npm ci && while sleep 1000; do :; done"
+    depends_on:
+      - postgres
+      - redis
+    volumes:
+      - ..:/app
+    working_dir: /app
+    ports:
+      - '8080:8080'
+
+networks:
+  supersonic:
+    driver: bridge
