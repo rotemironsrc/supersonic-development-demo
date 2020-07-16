@@ -5,6 +5,16 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Debug web1",
+      "request": "launch",
+      "preLaunchTask": "build:watch",
+      "runtimeArgs": ["run-script", "debug"],
+      "runtimeExecutable": "npm",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "pwa-node",
+      "restart": true
+    },
+    {
       "type": "node",
       "request": "launch",
       "runtimeExecutable": "${workspaceFolder}/node_modules/nodemon/bin/nodemon.js",
