@@ -32,7 +32,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    restart: always
+    restart: unless-stopped
     command: /bin/sh -c "npm ci && while sleep 1000; do :; done"
     depends_on:
       - postgres
@@ -42,6 +42,8 @@ services:
     working_dir: /app
     ports:
       - '8080:8080'
+    networks:
+      - supersonic
 
 networks:
   supersonic:

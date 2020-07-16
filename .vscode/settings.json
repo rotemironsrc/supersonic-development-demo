@@ -34,5 +34,5 @@
   "prettier.useTabs": false,
   "serverlessIDE.cfnLint.ignoreRules": [],
   "json.maxItemsComputed": 10000,
-  "debug.javascript.usePreview": false
+  "debug.javascript.usePreview": false,
 }

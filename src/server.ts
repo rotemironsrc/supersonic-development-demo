@@ -8,7 +8,7 @@ const HOST = '0.0.0.0';
 // App
 const app = express();
 app.get('/', (req: Request, res: Response) => {
-  res.send('this is the best way to develop in nodejs\n');
+  res.send('hello supersonic\n');
 });
 
 app.listen(PORT, HOST);
