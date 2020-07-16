@@ -1,0 +1,31 @@
+{
+  "name": "ts-on-node-template",
+  "version": "1.0.0",
+  "description": "vscode remote development environment for node.js with typescript in docker container running by docker-compose",
+  "author": "Rotem Levi",
+  "main": "dist/server.js",
+  "private": true,
+  "scripts": {
+    "debug": "nodemon -- dist/server.js",
+    "start": "node dist/server.js",
+    "test": "jest",
+    "build": "tsc",
+    "coverage": "jest --coverage"
+  },
+  "dependencies": {
+    "express": "^4.16.1",
+    "reflect-metadata": "^0.1.13"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.7",
+    "@types/jest": "^24.0.18",
+    "@types/node": "^12.12.50",
+    "@types/socket.io": "^2.1.2",
+    "eslint": "^7.4.0",
+    "jest": "^24.9.0",
+    "nodemon": "^2.0.4",
+    "socket.io": "^2.2.0",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.6.3"
+  }
+}

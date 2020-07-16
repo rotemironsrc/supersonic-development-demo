@@ -1,8 +1,2 @@
-## Ignore node_modules libraries
-node_modules/
-
-## Generated code
-dist/
-coverage/
-.devcontainer/data
+dev/data
 .DS_Store

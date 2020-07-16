@@ -6,6 +6,7 @@
   "main": "dist/server.js",
   "private": true,
   "scripts": {
+    "debug": "nodemon -- dist/server.js",
     "start": "node dist/server.js",
     "test": "jest",
     "build": "tsc",

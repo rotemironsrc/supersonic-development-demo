@@ -1,0 +1,9 @@
+## Ignore node_modules libraries
+node_modules/
+
+## Generated code
+dist/
+src/**/*.js
+coverage/
+.devcontainer/data
+.DS_Store

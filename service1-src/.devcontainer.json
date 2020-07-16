@@ -1,0 +1,11 @@
+{
+  "name": "node.js typescript docker test",
+  "dockerComposeFile": ["../dev/docker-compose.yml"],
+  "service": "web1",
+  "workspaceFolder": "/app",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/zsh",
+    "workbench.colorTheme": "Tomorrow Night Blue"
+  },
+  "extensions": ["esbenp.prettier-vscode"]
+}
