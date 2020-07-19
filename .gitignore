@@ -1,2 +1,4 @@
 dev/data
 .DS_Store
+node_modules
+.devcontainer/data
