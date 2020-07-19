@@ -40,10 +40,11 @@ services:
     volumes:
       - ..:/app
     working_dir: /app
+    env_file: ../dev.env
     mem_limit: 1000m
     mem_reservation: 1000m
     ports:
-      - '8080:8080'
+      - '8085:8085'
     networks:
       - supersonic
 

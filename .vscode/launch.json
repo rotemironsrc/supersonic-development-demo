@@ -12,7 +12,8 @@
       "runtimeExecutable": "npm",
       "skipFiles": ["<node_internals>/**"],
       "type": "pwa-node",
-      "restart": true
+      "restart": true,
+      "envFile": "${workspaceFolder}/dev.env"
     }
   ]
 }

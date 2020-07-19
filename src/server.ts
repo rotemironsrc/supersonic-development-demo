@@ -2,7 +2,7 @@ import { Request, Response } from 'express';
 import express from 'express';
 
 // Constants
-const PORT = 8080;
+const PORT = 8085;
 const HOST = '0.0.0.0';
 
 // App
