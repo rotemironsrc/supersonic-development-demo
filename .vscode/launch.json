@@ -13,19 +13,6 @@
       "skipFiles": ["<node_internals>/**"],
       "type": "pwa-node",
       "restart": true
-    },
-    {
-      "type": "node",
-      "request": "launch",
-      "runtimeExecutable": "${workspaceFolder}/node_modules/nodemon/bin/nodemon.js",
-      "args": ["--watch", "dist"],
-      "name": "Debug TypeScript in Node.js",
-      "preLaunchTask": "build:watch",
-      "program": "${workspaceFolder}/dist/server.js",
-      "cwd": "${workspaceFolder}",
-      "protocol": "inspector",
-      "outFiles": ["${workspaceFolder}/dist/**/*.js"],
-      "restart": true
     }
   ]
 }

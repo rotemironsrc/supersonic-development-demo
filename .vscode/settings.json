@@ -8,6 +8,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "files.exclude": {
+    "node_modules": false,
     "dist": true,
     "**/.DS_Store": true,
     "**/.git": true,
@@ -33,7 +34,6 @@
   "prettier.semi": true,
   "prettier.trailingComma": "none",
   "prettier.useTabs": false,
-  "serverlessIDE.cfnLint.ignoreRules": [],
   "json.maxItemsComputed": 10000,
   "debug.javascript.usePreview": false
 }
