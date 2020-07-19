@@ -35,5 +35,7 @@
   "prettier.trailingComma": "none",
   "prettier.useTabs": false,
   "json.maxItemsComputed": 10000,
-  "debug.javascript.usePreview": false
+  "debug.javascript.usePreview": false,
+  "terminal.integrated.shell.linux": "",
+  "terminal.integrated.allowChords": false
 }
