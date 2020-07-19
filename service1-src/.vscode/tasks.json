@@ -9,7 +9,7 @@
       "tsconfig": "tsconfig.json",
       "option": "watch",
       "problemMatcher": ["$tsc-watch"],
-      "isBackground": false,
+      "isBackground": true,
       "detail": "Transpiling TypeScript to JavaScript On Change",
       "group": "build"
     }
