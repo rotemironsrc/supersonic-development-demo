@@ -6,7 +6,8 @@
   "settings": {
     "terminal.integrated.shell.linux": "/bin/zsh",
     "workbench.colorTheme": "Tomorrow Night Blue",
-    "terminal.integrated.allowChords": false
+    "terminal.integrated.allowChords": false,
+    "remote.containers.defaultExtensions": ["ms-vscode-remote.remote-containers", "esbenp.prettier-vscode"]
   },
   "extensions": ["esbenp.prettier-vscode"],
   "shutdownAction": "none"
