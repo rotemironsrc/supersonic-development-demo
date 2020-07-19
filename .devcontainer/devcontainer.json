@@ -5,7 +5,9 @@
   "workspaceFolder": "/app",
   "settings": {
     "terminal.integrated.shell.linux": "/bin/zsh",
-    "workbench.colorTheme": "Tomorrow Night Blue"
+    "workbench.colorTheme": "Tomorrow Night Blue",
+    "terminal.integrated.allowChords": false
   },
-  "extensions": ["esbenp.prettier-vscode"]
+  "extensions": ["esbenp.prettier-vscode"],
+  "shutdownAction": "none"
 }

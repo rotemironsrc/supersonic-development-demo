@@ -1,5 +1,7 @@
 # SUPERSONIC DEVELOPMENT DEMO
 
+#### Inpired by https://code.visualstudio.com/docs/remote/containers#_quick-start-open-an-existing-folder-in-a-container
+
 Test project to create a skeleton app for node.js in typescript on a docker container running by a docker-compose with
 visual studio code
 

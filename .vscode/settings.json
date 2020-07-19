@@ -7,6 +7,7 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "remote.containers.defaultExtensions": ["ms-vscode-remote.remote-containers", "esbenp.prettier-vscode"],
   "files.exclude": {
     "node_modules": false,
     "dist": true,
@@ -18,6 +19,7 @@
   "search.exclude": {
     "**/node_modules": true
   },
+
   "prettier.singleQuote": true,
   "prettier.proseWrap": "always",
   "prettier.quoteProps": "consistent",
@@ -36,6 +38,5 @@
   "prettier.useTabs": false,
   "json.maxItemsComputed": 10000,
   "debug.javascript.usePreview": false,
-  "terminal.integrated.shell.linux": "",
   "terminal.integrated.allowChords": false
 }
