@@ -13,7 +13,7 @@
     "coverage": "jest --coverage"
   },
   "dependencies": {
-    "express": "^4.16.1",
+    "express": "^4.17.3",
     "reflect-metadata": "^0.1.13"
   },
   "devDependencies": {
